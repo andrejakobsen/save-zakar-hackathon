@@ -188,7 +188,7 @@ def init_connection() -> connection:
 def fetch_sql(
     _connection: connection,
     sql: str,
-    parameters: dict[str, str | int] = {},
+    parameters = {},
     day_col="day",
 ) -> pd.DataFrame:
     # try:
