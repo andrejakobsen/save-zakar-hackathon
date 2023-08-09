@@ -475,7 +475,7 @@ def init_connection() -> connection:
 
 @st.cache_data
 def fetch_sql(
-    _connection: connection, sql: str, parameters: dict[str, str | int] = {}
+    _connection: connection, sql: str, parameters = {}
 ) -> pd.DataFrame:
     # try:
     with _connection:
